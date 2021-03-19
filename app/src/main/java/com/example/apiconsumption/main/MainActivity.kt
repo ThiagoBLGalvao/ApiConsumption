@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity(), Contract.View {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity_layout)
 
+        val presenterImpl = PresenterMainActivityImpl(this@MainActivity)
+
+        if(savedInstanceState == null)
+            presenterImpl.inti()
     }
 
     private fun loadRetrofitService() {
@@ -28,7 +32,9 @@ class MainActivity : AppCompatActivity(), Contract.View {
             }
     }
 
-    override fun loadActivity() {
+    override fun loadFragment() {
+        loadRetrofitService()
+
 
     }
 }
