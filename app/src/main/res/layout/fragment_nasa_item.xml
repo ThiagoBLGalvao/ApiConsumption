@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ivory">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/straight_2"
+        android:layout_marginTop="@dimen/straight_3"
+        android:layout_marginEnd="@dimen/straight_2"
+        android:backgroundTint="@color/pewter"
+        app:cardCornerRadius="@dimen/straight_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <VideoView
+                android:id="@+id/video_nasa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="@dimen/video_straight_1"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image_nasa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/nasa_image"
+                android:maxHeight="@dimen/image_max_heig"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_nasa_content"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/straight_8"
+                android:padding="@dimen/straight_2"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/explanation_nasa_content"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/straight_2"
+                android:padding="@dimen/straight_4"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_nasa_content"
+                tools:text="Clouds of stardust drift through this deep skyscape, across the Perseus molecular cloud some 850 light-years away. Dusty nebulae reflecting light from embedded young stars stand out in the nearly 2 degree wide telescopic field of view. With a characteristic bluish color reflection nebula NGC 1333 is at center, vdB 13 at top right, with rare yellowish reflection nebula vdB 12 near the top of the frame. Stars are forming in the molecular cloud, though most are obscured at visible wavelengths by the pervasive dust. Still, hints of contrasting red emission from Herbig-Haro objects, the jets and shocked glowing gas emanating from recently formed stars, are evident in NGC 1333. The chaotic environment may be similar to one in which our own Sun formed over 4.5 billion years ago. At the estimated distance of the Perseus molecular cloud, this cosmic scene would span about 40 light-years." />
+
+            <TextView
+                android:id="@+id/copyright_nasa_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/straight_2"
+                android:layout_marginTop="@dimen/straight_3"
+                android:layout_marginEnd="@dimen/straight_2"
+                android:padding="@dimen/straight_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/explanation_nasa_content"
+                tools:text="Kerry-Ann Lecky Hepburn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

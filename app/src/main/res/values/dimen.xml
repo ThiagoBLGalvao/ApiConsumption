@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="straight_1">2dp</dimen>
+    <dimen name="straight_2">4dp</dimen>
+    <dimen name="straight_3">8dp</dimen>
+    <dimen name="straight_4">16dp</dimen>
+    <dimen name="straight_5">32dp</dimen>
+    <dimen name="straight_6">64dp</dimen>
+    <dimen name="straight_7">128dp</dimen>
+    <dimen name="straight_8">256dp</dimen>
+    <dimen name="image_max_heig">234dp</dimen>
+    <dimen name="video_straight_1">200dp</dimen>
+</resources>

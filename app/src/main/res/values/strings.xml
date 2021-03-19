@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ApiConsumption</string>
+    <string name="nasa_image">Nasa image</string>
 </resources>
