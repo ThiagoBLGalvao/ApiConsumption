@@ -1,4 +1,4 @@
-package com.example.apiconsumption.model
+package com.example.apiconsumption.model.classes
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

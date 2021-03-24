@@ -1,7 +1,24 @@
 package com.example.apiconsumption.main
 
-class PresenterMainActivityImpl<T : Contract.View>(override var view: T?):Contract.Presenter<T> {
+import com.example.apiconsumption.model.repositories.RepositoryNasa
+
+class PresenterMainActivityImpl<T : Contract.View>(
+    override var view: T?,
+    private val repository: RepositoryNasa
+) : Contract.Presenter<T> {
+
     override fun inti() {
-        view?.loadFragment()
+        view?.checkPermissions()
+    }
+
+    override fun onLoadFragment() {
+        repository.getApod()
+            .doOnSubscribe {
+                view?.loadLoadingScreen()
+            }
+            .subscribe(
+                { view?.loadNasaApodFragment(it) },
+                { view?.loadErrorScreen(it.message) }
+            )
     }
 }

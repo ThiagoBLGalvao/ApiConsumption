@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">ApiConsumption</string>
     <string name="nasa_image">Nasa image</string>
+    <string name="loading">Loading...</string>
+    <string name="unknown_error">Unknown error</string>
 </resources>

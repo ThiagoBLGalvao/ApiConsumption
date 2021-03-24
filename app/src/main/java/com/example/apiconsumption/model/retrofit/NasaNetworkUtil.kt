@@ -1,4 +1,4 @@
-package com.example.apiconsumption.utils
+package com.example.apiconsumption.model.retrofit
 
 import com.google.gson.GsonBuilder
 import retrofit2.Retrofit

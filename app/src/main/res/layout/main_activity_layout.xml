@@ -3,5 +3,17 @@
     android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <include
+        android:id="@+id/loading_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/loading_fragment_layout"
+        android:visibility="gone"
+        />
+    <include
+        android:id="@+id/error_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/error_fragment_layout"
+        android:visibility="gone"/>
 </FrameLayout>
