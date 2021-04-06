@@ -3,7 +3,7 @@ package com.example.apiconsumption.model.repositories
 import com.example.apiconsumption.dtoClass.toModel
 import com.example.apiconsumption.model.classes.Apod
 import com.example.apiconsumption.model.apis.NasaApi
-import rx.Observable
+import io.reactivex.Observable
 
 class RepositoryApodNasaApi(private val nasaApi: NasaApi): RepositoryNasa{
 

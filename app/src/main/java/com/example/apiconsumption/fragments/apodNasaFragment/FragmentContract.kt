@@ -2,11 +2,11 @@ package com.example.apiconsumption.fragments.apodNasaFragment
 
 import com.example.apiconsumption.model.classes.Apod
 
-interface Contract {
+interface FragmentContract {
     interface Fragment {
         fun loadFragment()
 
-        fun alterVisibilityImageview()
+        fun alterVisibilityImageView()
 
         fun alterVisibilityVideoView()
     }

@@ -1,7 +1,6 @@
 package com.example.apiconsumption.main
 
 import com.example.apiconsumption.model.classes.Apod
-import rx.Observable
 
 interface Contract {
     interface View {

@@ -7,7 +7,7 @@ import kotlinx.android.parcel.Parcelize
 data class Apod(
     val title:String,
     val description: String,
-    val copyright: String,
+    val copyright: String?,
     val mediaType: String,
     val url: String
 ):Parcelable
